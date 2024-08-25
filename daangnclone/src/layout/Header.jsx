@@ -31,7 +31,12 @@ const Header = () => {
           </div>
         </div>
         <div className="header-chat-container">
-          <div className="header-chat-search"></div>
+          <div className="header-chat-search-container">
+            <input
+              className="header-chat-search"
+              placeholder="물품이나 동네를 검색해보세요"
+            ></input>
+          </div>
           <div className="header-chat" onClick={() => navigate("/chat")}>
             채팅하기
           </div>
