@@ -1,5 +1,5 @@
 @charset "UTF-8";
 
-@import "./components/header";
+@import "./mixins/font";
 
-// @import "./mixins/font";
+@import "./components/header";

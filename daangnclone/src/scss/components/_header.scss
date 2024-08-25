@@ -24,9 +24,7 @@
       .header-partjob,
       .header-realty,
       .header-cardirect {
-        color: rgb(77, 81, 89);
-        font-weight: 700;
-        font-size: 18px;
+        @include head_font();
       }
     }
     .header-chat-container {
