@@ -26,6 +26,15 @@
       .header-realty,
       .header-cardirect {
         @include head_font();
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+      }
+      :hover {
+        color: gray;
+      }
+      .active {
+        color: rgb(255, 111, 15);
       }
     }
     .header-chat-container {
@@ -49,6 +58,10 @@
         border: 1px solid #b2b2b2;
         border-radius: 5px;
         padding: 8px 16px;
+      }
+      :hover {
+        background-color: rgb(209, 211, 216);
+        color: gray;
       }
     }
   }
