@@ -1,0 +1,42 @@
+@mixin footer_content_box($w: 131px, $h: 50px) {
+  width: $w;
+  height: $h;
+}
+
+@mixin footer_content_one() {
+  .footer-content-one-one {
+    @include footer_content_box();
+  }
+  .footer-content-one-two {
+    @include footer_content_box();
+  }
+  .footer-content-one-three {
+    @include footer_content_box();
+  }
+  .footer-content-one-four {
+    @include footer_content_box();
+  }
+  .footer-content-one-five {
+    @include footer_content_box();
+  }
+}
+
+@mixin footer_content_two() {
+  .footer-content-two-one {
+    @include footer_content_box();
+  }
+  .footer-content-two-two {
+    @include footer_content_box();
+  }
+}
+@mixin footer_content_third() {
+  .footer-content-third-one {
+    @include footer_content_box();
+  }
+  .footer-content-third-two {
+    @include footer_content_box();
+  }
+  .footer-content-third-third {
+    @include footer_content_box();
+  }
+}
