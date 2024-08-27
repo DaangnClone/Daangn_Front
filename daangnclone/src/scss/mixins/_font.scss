@@ -3,3 +3,11 @@
   font-weight: 700;
   font-size: 18px;
 }
+
+@mixin gray_box($w: 288px) {
+  background-color: rgb(242, 243, 246);
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  width: $w;
+}
