@@ -1,6 +1,7 @@
-@mixin footer_content_box($w: 131px, $h: 50px) {
+@mixin footer_content_box($w: 131px, $h: 35px) {
   width: $w;
   height: $h;
+  font-size: 14px;
 }
 
 @mixin footer_content_one() {
@@ -39,4 +40,22 @@
   .footer-content-third-third {
     @include footer_content_box();
   }
+}
+
+@mixin container_padding_set($t, $b) {
+  display: flex;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@mixin container_margin_set($t, $b, $g: 10px) {
+  display: flex;
+  margin-top: $t;
+  margin-bottom: $b;
+  gap: $g;
+}
+
+@mixin container_column() {
+  display: flex;
+  flex-direction: column;
 }
