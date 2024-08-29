@@ -7,11 +7,9 @@
     height: 1px;
   }
   .footer-content-container {
-    display: flex;
+    @include container_padding_set(48px, 48px);
     justify-content: center;
-    // align-items: center;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    width: 100%;
     .footer-content-container-one {
       @include footer_content_one();
     }
@@ -31,10 +29,66 @@
       .footer-content-container-app-icon {
         display: flex;
         gap: 10px;
+        margin-top: 10px;
         .footer-content-app-container {
-          @include gray_box(100px);
+          @include gray_box(100%);
+          padding-left: 20px;
+          padding-right: 20px;
         }
       }
     }
+  }
+  .footer-bottom-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .footer-bottom-content-container {
+      @include container_column();
+      justify-content: center;
+
+      .footer-container-bottom-line {
+        background: var(--calender_date_box, #eaeaea);
+        height: 1px;
+        justify-content: center;
+        width: 757px;
+      }
+      .footer-bottom-detail-content {
+        @include container_padding_set(24px, 100px);
+        flex-direction: column;
+        .footer-bottom-container-top {
+          display: flex;
+          .footer-bottom-manual {
+            @include container_column();
+            color: rgb(134, 139, 148);
+            font-size: 13px;
+            gap: 5px;
+          }
+          .footer-bottom-manual-icon {
+            padding-left: 200px;
+            display: flex;
+            gap: 10px;
+          }
+        }
+        .footer-bottom-container-bottom {
+          color: rgb(134, 139, 148);
+          font-size: 13px;
+          font-weight: 700;
+          .footer-bottom-container-bottom-requirement {
+            @include container_margin_set(20px, 16px);
+          }
+          .footer-bottom-container-bottom-judgement {
+            @include container_margin_set(20px, 16px);
+          }
+        }
+      }
+    }
+  }
+}
+.footer-content-font {
+  display: flex;
+  .footer-font-dark {
+    font-weight: 700;
+    display: flex;
   }
 }
